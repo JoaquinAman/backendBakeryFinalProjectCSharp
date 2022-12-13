@@ -1,0 +1,37 @@
+﻿using BakeryApi.Dao.Model;
+using BakeryApi.Dao.Model.Data;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BakeryApi.Dao.Repository.Bakery
+{
+    public class BakeryRepository : IBakeryRepository
+    {
+        private readonly BakeryContext _context;
+        public BakeryRepository(BakeryContext context)
+        {
+            _context = context;
+        }
+        public BakeryDao CreateBakeryDao(BakeryDao bakeryDao)
+        {
+            _context.Add(bakeryDao);
+            _context.SaveChanges();
+            return bakeryDao;
+        }
+
+        public List<BakeryDao> GetAll()
+        {
+            return _context.Bakerys.ToList();
+        }
+
+        public void RemoveBakeryDao(int id)
+        {
+            var itemToRemove = _context.Bakerys.SingleOrDefault(x => x.BakeryId == id); //returns a single item.if (itemToRemove != null) {
+            _context.Bakerys.Remove(itemToRemove);
+            _context.SaveChanges();
+        }
+    }
+}

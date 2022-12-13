@@ -1,0 +1,12 @@
+C:\Users\Joaqu\source\repos\BakeryApi\Bakery.Dao.Interface\bin\Debug\net6.0\Bakery.Dao.Interface.deps.json
+C:\Users\Joaqu\source\repos\BakeryApi\Bakery.Dao.Interface\bin\Debug\net6.0\Bakery.Dao.Interface.dll
+C:\Users\Joaqu\source\repos\BakeryApi\Bakery.Dao.Interface\bin\Debug\net6.0\Bakery.Dao.Interface.pdb
+C:\Users\Joaqu\source\repos\BakeryApi\Bakery.Dao.Interface\obj\Debug\net6.0\Bakery.Dao.Interface.csproj.AssemblyReference.cache
+C:\Users\Joaqu\source\repos\BakeryApi\Bakery.Dao.Interface\obj\Debug\net6.0\Bakery.Dao.Interface.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joaqu\source\repos\BakeryApi\Bakery.Dao.Interface\obj\Debug\net6.0\Bakery.Dao.Interface.AssemblyInfoInputs.cache
+C:\Users\Joaqu\source\repos\BakeryApi\Bakery.Dao.Interface\obj\Debug\net6.0\Bakery.Dao.Interface.AssemblyInfo.cs
+C:\Users\Joaqu\source\repos\BakeryApi\Bakery.Dao.Interface\obj\Debug\net6.0\Bakery.Dao.Interface.csproj.CoreCompileInputs.cache
+C:\Users\Joaqu\source\repos\BakeryApi\Bakery.Dao.Interface\obj\Debug\net6.0\Bakery.Dao.Interface.dll
+C:\Users\Joaqu\source\repos\BakeryApi\Bakery.Dao.Interface\obj\Debug\net6.0\refint\Bakery.Dao.Interface.dll
+C:\Users\Joaqu\source\repos\BakeryApi\Bakery.Dao.Interface\obj\Debug\net6.0\Bakery.Dao.Interface.pdb
+C:\Users\Joaqu\source\repos\BakeryApi\Bakery.Dao.Interface\obj\Debug\net6.0\ref\Bakery.Dao.Interface.dll
