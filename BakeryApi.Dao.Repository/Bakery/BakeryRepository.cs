@@ -1,5 +1,6 @@
 ﻿using BakeryApi.Dao.Model;
 using BakeryApi.Dao.Model.Data;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,7 +25,7 @@ namespace BakeryApi.Dao.Repository.Bakery
 
         public List<BakeryDao> GetAll()
         {
-            return _context.Bakerys.ToList();
+            return _context.Bakerys.Include(x => x.OrderList).ToList();
         }
 
         public void RemoveBakeryDao(int id)
