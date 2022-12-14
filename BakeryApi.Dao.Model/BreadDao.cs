@@ -10,5 +10,7 @@ namespace BakeryApi.Dao.Model
         public string? BreadDaoName { get; set; }
         [Required]
         public int Price { get; set; }
+        [Required]
+        public ICollection<OrderBreadDao> BreadDaoList { get; set; }
     }
 }

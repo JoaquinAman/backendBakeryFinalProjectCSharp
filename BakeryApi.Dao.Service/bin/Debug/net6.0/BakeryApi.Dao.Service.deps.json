@@ -613,6 +613,9 @@
         }
       },
       "BakeryApi.Dao.Interface/1.0.0": {
+        "dependencies": {
+          "BakeryApi.Dao.Model": "1.0.0"
+        },
         "runtime": {
           "BakeryApi.Dao.Interface.dll": {}
         }

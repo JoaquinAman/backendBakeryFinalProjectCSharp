@@ -28,11 +28,25 @@ namespace BakeryApi.Dao.Repository.Bakery
             return _context.Bakerys.Include(x => x.OrderList).ToList();
         }
 
+        public BakeryDao GetById(int id)
+        {
+            return _context.Bakerys.Include(x => x.OrderList).SingleOrDefault(x => x.BakeryId == id); //returns a single item.if (itemToRemove != null) {
+        }
+
         public void RemoveBakeryDao(int id)
         {
             var itemToRemove = _context.Bakerys.SingleOrDefault(x => x.BakeryId == id); //returns a single item.if (itemToRemove != null) {
             _context.Bakerys.Remove(itemToRemove);
             _context.SaveChanges();
+        }
+
+        public BakeryDao UpdateBakeryDaoOrderList(int bakeryId, BakeryDao bakeryDao)
+        {
+            var itemToUpdate = _context.Bakerys.Include(x => x.OrderList).SingleOrDefault(x => x.BakeryId == bakeryId); //returns a single item.if (itemToRemove != null) {
+            //first.AddRange(second);
+            itemToUpdate.OrderList = bakeryDao.OrderList;
+            _context.SaveChanges();
+            return itemToUpdate;
         }
     }
 }

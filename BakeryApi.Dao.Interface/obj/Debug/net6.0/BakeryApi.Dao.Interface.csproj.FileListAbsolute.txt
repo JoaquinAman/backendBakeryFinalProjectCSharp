@@ -10,3 +10,6 @@ C:\Users\Joaqu\source\repos\BakeryApi\BakeryApi.Dao.Interface\obj\Debug\net6.0\B
 C:\Users\Joaqu\source\repos\BakeryApi\BakeryApi.Dao.Interface\obj\Debug\net6.0\refint\BakeryApi.Dao.Interface.dll
 C:\Users\Joaqu\source\repos\BakeryApi\BakeryApi.Dao.Interface\obj\Debug\net6.0\BakeryApi.Dao.Interface.pdb
 C:\Users\Joaqu\source\repos\BakeryApi\BakeryApi.Dao.Interface\obj\Debug\net6.0\ref\BakeryApi.Dao.Interface.dll
+C:\Users\Joaqu\source\repos\BakeryApi\BakeryApi.Dao.Interface\bin\Debug\net6.0\BakeryApi.Dao.Model.dll
+C:\Users\Joaqu\source\repos\BakeryApi\BakeryApi.Dao.Interface\bin\Debug\net6.0\BakeryApi.Dao.Model.pdb
+C:\Users\Joaqu\source\repos\BakeryApi\BakeryApi.Dao.Interface\obj\Debug\net6.0\BakeryApi.Dao.Interface.csproj.CopyComplete

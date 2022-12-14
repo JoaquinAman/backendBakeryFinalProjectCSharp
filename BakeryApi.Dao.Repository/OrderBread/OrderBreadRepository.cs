@@ -1,5 +1,6 @@
 ﻿using BakeryApi.Dao.Model;
 using BakeryApi.Dao.Model.Data;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;

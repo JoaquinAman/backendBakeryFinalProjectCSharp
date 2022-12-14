@@ -74,12 +74,23 @@ namespace BakeryApi.Dao.Model.Migrations
                 {
                     table.PrimaryKey("PK_OrderBreads", x => x.OrderBreadId);
                     table.ForeignKey(
+                        name: "FK_OrderBreads_Breads_BreadDaoId",
+                        column: x => x.BreadDaoId,
+                        principalTable: "Breads",
+                        principalColumn: "BreadDaoId",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
                         name: "FK_OrderBreads_Orders_OrderDaoId",
                         column: x => x.OrderDaoId,
                         principalTable: "Orders",
                         principalColumn: "OrderId",
                         onDelete: ReferentialAction.Cascade);
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_OrderBreads_BreadDaoId",
+                table: "OrderBreads",
+                column: "BreadDaoId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_OrderBreads_OrderDaoId",
@@ -96,10 +107,10 @@ namespace BakeryApi.Dao.Model.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Breads");
+                name: "OrderBreads");
 
             migrationBuilder.DropTable(
-                name: "OrderBreads");
+                name: "Breads");
 
             migrationBuilder.DropTable(
                 name: "Orders");

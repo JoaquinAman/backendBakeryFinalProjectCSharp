@@ -15,5 +15,15 @@ namespace BakeryApi.Dao.Model.Data
         {
             optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=BakeryJoaquinDB");
         }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<OrderBreadDao>().HasOne(b => b.BreadDao)
+                .WithMany(ba => ba.BreadDaoList)
+                .HasForeignKey(fo => fo.BreadDaoId);
+
+            modelBuilder.Entity<OrderBreadDao>().HasOne(b => b.OrderDao)
+                .WithMany(ba => ba.BreadDaoList)
+                .HasForeignKey(fo => fo.OrderDaoId);
+        }
     }
 }

@@ -11,6 +11,8 @@ namespace BakeryApi.Dao.Repository.Bakery
     {
         List<BakeryDao> GetAll();
         BakeryDao CreateBakeryDao(BakeryDao bakeryDao);
+        BakeryDao UpdateBakeryDaoOrderList(int id, BakeryDao bakeryDao);
         void RemoveBakeryDao(int id);
+        BakeryDao GetById(int id);
     }
 }

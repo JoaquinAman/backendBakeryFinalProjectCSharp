@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BakeryApi.Dao.Model.Migrations
 {
     [DbContext(typeof(BakeryContext))]
-    [Migration("20221212205305_firstMigration")]
+    [Migration("20221213181204_firstMigration")]
     partial class firstMigration
     {
         /// <inheritdoc />
@@ -84,6 +84,8 @@ namespace BakeryApi.Dao.Model.Migrations
 
                     b.HasKey("OrderBreadId");
 
+                    b.HasIndex("BreadDaoId");
+
                     b.HasIndex("OrderDaoId");
 
                     b.ToTable("OrderBreads");
@@ -119,11 +121,21 @@ namespace BakeryApi.Dao.Model.Migrations
 
             modelBuilder.Entity("BakeryApi.Dao.Model.OrderBreadDao", b =>
                 {
-                    b.HasOne("BakeryApi.Dao.Model.OrderDao", null)
+                    b.HasOne("BakeryApi.Dao.Model.BreadDao", "BreadDao")
+                        .WithMany("BreadDaoList")
+                        .HasForeignKey("BreadDaoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BakeryApi.Dao.Model.OrderDao", "OrderDao")
                         .WithMany("BreadDaoList")
                         .HasForeignKey("OrderDaoId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("BreadDao");
+
+                    b.Navigation("OrderDao");
                 });
 
             modelBuilder.Entity("BakeryApi.Dao.Model.OrderDao", b =>
@@ -136,6 +148,11 @@ namespace BakeryApi.Dao.Model.Migrations
             modelBuilder.Entity("BakeryApi.Dao.Model.BakeryDao", b =>
                 {
                     b.Navigation("OrderList");
+                });
+
+            modelBuilder.Entity("BakeryApi.Dao.Model.BreadDao", b =>
+                {
+                    b.Navigation("BreadDaoList");
                 });
 
             modelBuilder.Entity("BakeryApi.Dao.Model.OrderDao", b =>

@@ -34,6 +34,8 @@ namespace BakeryApi
 
             builder.Services.AddTransient<IBakeryRepository, BakeryRepository>();
             builder.Services.AddTransient<IDatabase<BakeryDao>, BakeryDbService>();
+            builder.Services.AddTransient<IBakery<OrderDao>, BakeryDbService>();
+            
 
             builder.Services.AddDbContext<BakeryContext>(
          options => options.UseSqlServer("name=ConnectionStrings:DefaultConnection"));

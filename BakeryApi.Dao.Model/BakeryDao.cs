@@ -9,7 +9,9 @@ namespace BakeryApi.Dao.Model
         public int BakeryId { get; set; }
         [Required]
         public string? BakeryName { get; set; }
-        
+
+        //[Required]
+        //public ICollection<OrderDao> BreadDaoList { get; set; }
         public List<OrderDao>? OrderList { get; set; }
         [Required]
         public int MaxBreads { get; set; }

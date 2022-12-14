@@ -21,11 +21,12 @@ namespace BakeryApi.Dao.Repository.Order
         public List<OrderDao> GetAll()
         {
             return _context.Orders.Include(x => x.BreadDaoList).ToList();
+            //return _context.Orders.ToList();
         }
 
         public OrderDao GetOrderDaoById(int id)
         {
-            return _context.Orders.SingleOrDefault(x => x.OrderId == id); //returns a single item.if (itemToRemove != null) {
+            return _context.Orders.Include(x => x.BreadDaoList).SingleOrDefault(x => x.OrderId == id); //returns a single item.if (itemToRemove != null) {
         }
 
         public void RemoveOrderDao(int id)

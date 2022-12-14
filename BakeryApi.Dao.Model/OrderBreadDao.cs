@@ -13,5 +13,9 @@ namespace BakeryApi.Dao.Model
         public int BreadDaoId { get; set; }
         [Required]
         public int Quantity { get; set; }
+        [Required]
+        public OrderDao OrderDao { get; set; }
+        [Required]
+        public BreadDao BreadDao { get; set;}
     }
 }

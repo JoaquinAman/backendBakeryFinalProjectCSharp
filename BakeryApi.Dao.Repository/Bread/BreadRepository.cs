@@ -1,5 +1,6 @@
 ﻿using BakeryApi.Dao.Model;
 using BakeryApi.Dao.Model.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace BakeryApi.Dao.Repository.Bread
 {

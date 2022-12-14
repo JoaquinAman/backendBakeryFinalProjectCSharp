@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BakeryApi.Dao.Model\BakeryApi.Dao.Model.csproj" />
+  </ItemGroup>
+
 </Project>

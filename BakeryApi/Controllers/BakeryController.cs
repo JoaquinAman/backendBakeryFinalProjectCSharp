@@ -11,33 +11,43 @@ namespace BakeryApi.Controllers
     public class BakeryController : ControllerBase
     {
         private readonly IDatabase<BakeryDao> _bakeryDbService;
-        public BakeryController(IDatabase<BakeryDao> bakeryDbService)
+        private readonly IBakery<OrderDao> _bakeryService;
+        public BakeryController(IDatabase<BakeryDao> bakeryDbService, IBakery<OrderDao> bakeryService)
         {
             _bakeryDbService = bakeryDbService;
+            _bakeryService = bakeryService;
         }
-        //private readonly IBakeryRepository _bakeryRepository;
-        //public BakeryController(IBakeryRepository bakeryRepository)
-        //{
-        //    _bakeryRepository = bakeryRepository;
-        //}
+
         [HttpGet]
         public List<BakeryDao> GetBakery()
         {
             return _bakeryDbService.GetList();
         }
         [HttpPost]
-        public BakeryDao CreateBread(BakeryDao bakeryDao)
+        public BakeryDao CreateBakery(BakeryDao bakeryDao)
         {
             //return _bakeryRepository.CreateBakeryDao(bakeryDao);
             return _bakeryDbService.Create(bakeryDao);
 
         }
+        [HttpGet]
+        [Route("bakery")]
+        public BakeryDao GetBakeryById(int bakeryId)
+        {
+            return _bakeryDbService.GetById(bakeryId);
+        }
+        [HttpPut]
+        [Route("addOrder")]
+        public BakeryDao AddOrderToList(int bakeryId, OrderDao order)
+        {
+            BakeryDao returnedOrder = _bakeryService.AddOrderToOrderList(bakeryId, order);
+            return returnedOrder;
+        }
+
         [HttpDelete]
         public void DeleteBakery(int id)
         {
-            //_bakeryRepository.RemoveBakeryDao(id);
             _bakeryDbService.DeleteById(id);
-
         }
     }
 }

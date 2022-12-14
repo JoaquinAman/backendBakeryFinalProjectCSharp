@@ -10,17 +10,31 @@ using System.Threading.Tasks;
 
 namespace BakeryApi.Dao.Service
 {
-    public class BakeryDbService : IDatabase<BakeryDao>
+    public class BakeryDbService : IDatabase<BakeryDao>, IBakery<OrderDao>
     {
         private readonly IBakeryRepository _bakeryRepository;
-
+        
         public BakeryDbService(IBakeryRepository bakeryRepository)
         {
             _bakeryRepository = bakeryRepository;
         }
-        public BakeryDao Create(BakeryDao entityDao)
+
+        public BakeryDao GetById(int id)
         {
-            return _bakeryRepository.CreateBakeryDao(entityDao);
+            return _bakeryRepository.GetById(id);
+        }
+
+        public BakeryDao AddOrderToOrderList(int bakeryId, OrderDao orderDao)
+        {
+            BakeryDao bakeryDao = _bakeryRepository.GetById(bakeryId);
+            bakeryDao.OrderList.Add(orderDao);
+            BakeryDao returnBakeryDao = _bakeryRepository.UpdateBakeryDaoOrderList(bakeryId, bakeryDao);
+            return returnBakeryDao;
+        }
+
+        public BakeryDao Create(BakeryDao bakeryDao)
+        {
+            return _bakeryRepository.CreateBakeryDao(bakeryDao);
         }
 
         public void DeleteById(int id)
@@ -28,10 +42,6 @@ namespace BakeryApi.Dao.Service
             _bakeryRepository.RemoveBakeryDao(id);
         }
 
-        public BakeryDao GetById(int id)
-        {
-            throw new NotImplementedException();
-        }
 
         public List<BakeryDao> GetList()
         {

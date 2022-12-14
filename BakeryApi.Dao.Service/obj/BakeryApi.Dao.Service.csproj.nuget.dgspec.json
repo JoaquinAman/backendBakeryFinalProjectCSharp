@@ -31,7 +31,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Joaqu\\source\\repos\\BakeryApi\\BakeryApi.Dao.Model\\BakeryApi.Dao.Model.csproj": {
+                "projectPath": "C:\\Users\\Joaqu\\source\\repos\\BakeryApi\\BakeryApi.Dao.Model\\BakeryApi.Dao.Model.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
