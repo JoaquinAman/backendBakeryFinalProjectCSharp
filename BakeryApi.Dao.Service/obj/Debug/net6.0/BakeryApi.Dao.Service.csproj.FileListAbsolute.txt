@@ -17,3 +17,5 @@ C:\Users\Joaqu\source\repos\BakeryApi\BakeryApi.Dao.Service\obj\Debug\net6.0\Bak
 C:\Users\Joaqu\source\repos\BakeryApi\BakeryApi.Dao.Service\obj\Debug\net6.0\refint\BakeryApi.Dao.Service.dll
 C:\Users\Joaqu\source\repos\BakeryApi\BakeryApi.Dao.Service\obj\Debug\net6.0\BakeryApi.Dao.Service.pdb
 C:\Users\Joaqu\source\repos\BakeryApi\BakeryApi.Dao.Service\obj\Debug\net6.0\ref\BakeryApi.Dao.Service.dll
+C:\Users\Joaqu\source\repos\BakeryApi\BakeryApi.Dao.Service\bin\Debug\net6.0\BakeryApi.Domain.Model.dll
+C:\Users\Joaqu\source\repos\BakeryApi\BakeryApi.Dao.Service\bin\Debug\net6.0\BakeryApi.Domain.Model.pdb

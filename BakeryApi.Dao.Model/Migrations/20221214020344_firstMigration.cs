@@ -31,7 +31,7 @@ namespace BakeryApi.Dao.Model.Migrations
                 {
                     BreadDaoId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    BreadDaoName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    BreadDaoName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Price = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>

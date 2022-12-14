@@ -51,7 +51,6 @@ namespace BakeryApi.Dao.Model.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("BreadDaoId"));
 
                     b.Property<string>("BreadDaoName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Price")

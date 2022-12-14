@@ -1,0 +1,12 @@
+C:\Users\Joaqu\source\repos\BakeryApi\BakeryApi.Domain.Model\bin\Debug\net6.0\BakeryApi.Domain.Model.deps.json
+C:\Users\Joaqu\source\repos\BakeryApi\BakeryApi.Domain.Model\bin\Debug\net6.0\BakeryApi.Domain.Model.dll
+C:\Users\Joaqu\source\repos\BakeryApi\BakeryApi.Domain.Model\bin\Debug\net6.0\BakeryApi.Domain.Model.pdb
+C:\Users\Joaqu\source\repos\BakeryApi\BakeryApi.Domain.Model\obj\Debug\net6.0\BakeryApi.Domain.Model.csproj.AssemblyReference.cache
+C:\Users\Joaqu\source\repos\BakeryApi\BakeryApi.Domain.Model\obj\Debug\net6.0\BakeryApi.Domain.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joaqu\source\repos\BakeryApi\BakeryApi.Domain.Model\obj\Debug\net6.0\BakeryApi.Domain.Model.AssemblyInfoInputs.cache
+C:\Users\Joaqu\source\repos\BakeryApi\BakeryApi.Domain.Model\obj\Debug\net6.0\BakeryApi.Domain.Model.AssemblyInfo.cs
+C:\Users\Joaqu\source\repos\BakeryApi\BakeryApi.Domain.Model\obj\Debug\net6.0\BakeryApi.Domain.Model.csproj.CoreCompileInputs.cache
+C:\Users\Joaqu\source\repos\BakeryApi\BakeryApi.Domain.Model\obj\Debug\net6.0\BakeryApi.Domain.Model.dll
+C:\Users\Joaqu\source\repos\BakeryApi\BakeryApi.Domain.Model\obj\Debug\net6.0\refint\BakeryApi.Domain.Model.dll
+C:\Users\Joaqu\source\repos\BakeryApi\BakeryApi.Domain.Model\obj\Debug\net6.0\BakeryApi.Domain.Model.pdb
+C:\Users\Joaqu\source\repos\BakeryApi\BakeryApi.Domain.Model\obj\Debug\net6.0\ref\BakeryApi.Domain.Model.dll

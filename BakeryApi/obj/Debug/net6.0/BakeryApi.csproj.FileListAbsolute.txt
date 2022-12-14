@@ -93,3 +93,5 @@ C:\Users\Joaqu\source\repos\BakeryApi\BakeryApi\bin\Debug\net6.0\BakeryApi.Dao.I
 C:\Users\Joaqu\source\repos\BakeryApi\BakeryApi\bin\Debug\net6.0\BakeryApi.Dao.Service.dll
 C:\Users\Joaqu\source\repos\BakeryApi\BakeryApi\bin\Debug\net6.0\BakeryApi.Dao.Interface.pdb
 C:\Users\Joaqu\source\repos\BakeryApi\BakeryApi\bin\Debug\net6.0\BakeryApi.Dao.Service.pdb
+C:\Users\Joaqu\source\repos\BakeryApi\BakeryApi\bin\Debug\net6.0\BakeryApi.Domain.Model.dll
+C:\Users\Joaqu\source\repos\BakeryApi\BakeryApi\bin\Debug\net6.0\BakeryApi.Domain.Model.pdb

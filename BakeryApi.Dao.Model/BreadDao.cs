@@ -6,11 +6,11 @@ namespace BakeryApi.Dao.Model
     {
         [Key]
         public int BreadDaoId { get; set; }
-        [Required]
+        
         public string? BreadDaoName { get; set; }
-        [Required]
+        
         public int Price { get; set; }
-        [Required]
+        
         public ICollection<OrderBreadDao> BreadDaoList { get; set; }
     }
 }

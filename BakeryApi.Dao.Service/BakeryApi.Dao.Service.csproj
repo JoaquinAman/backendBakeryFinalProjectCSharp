@@ -10,6 +10,7 @@
     <ProjectReference Include="..\BakeryApi.Dao.Interface\BakeryApi.Dao.Interface.csproj" />
     <ProjectReference Include="..\BakeryApi.Dao.Model\BakeryApi.Dao.Model.csproj" />
     <ProjectReference Include="..\BakeryApi.Dao.Repository\BakeryApi.Dao.Repository.csproj" />
+    <ProjectReference Include="..\BakeryApi.Domain.Model\BakeryApi.Domain.Model.csproj" />
   </ItemGroup>
 
 </Project>

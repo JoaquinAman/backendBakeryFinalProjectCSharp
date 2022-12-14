@@ -26,9 +26,9 @@ namespace BakeryApi.Dao.Service
 
         public BakeryDao AddOrderToOrderList(int bakeryId, OrderDao orderDao)
         {
-            BakeryDao bakeryDao = _bakeryRepository.GetById(bakeryId);
-            bakeryDao.OrderList.Add(orderDao);
-            BakeryDao returnBakeryDao = _bakeryRepository.UpdateBakeryDaoOrderList(bakeryId, bakeryDao);
+            //BakeryDao bakeryDao = _bakeryRepository.GetById(bakeryId);
+            //bakeryDao.OrderList.Add(orderDao);
+            BakeryDao returnBakeryDao = _bakeryRepository.AddOrderToOrderList(bakeryId, orderDao);
             return returnBakeryDao;
         }
 

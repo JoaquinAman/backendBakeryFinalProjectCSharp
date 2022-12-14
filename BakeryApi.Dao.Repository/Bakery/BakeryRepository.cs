@@ -40,11 +40,10 @@ namespace BakeryApi.Dao.Repository.Bakery
             _context.SaveChanges();
         }
 
-        public BakeryDao UpdateBakeryDaoOrderList(int bakeryId, BakeryDao bakeryDao)
+        public BakeryDao AddOrderToOrderList(int bakeryId, OrderDao orderDao)
         {
             var itemToUpdate = _context.Bakerys.Include(x => x.OrderList).SingleOrDefault(x => x.BakeryId == bakeryId); //returns a single item.if (itemToRemove != null) {
-            //first.AddRange(second);
-            itemToUpdate.OrderList = bakeryDao.OrderList;
+            itemToUpdate.OrderList.Add(orderDao);// = bakeryDao.OrderList;
             _context.SaveChanges();
             return itemToUpdate;
         }

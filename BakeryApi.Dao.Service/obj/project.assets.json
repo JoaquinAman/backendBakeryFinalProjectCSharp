@@ -1087,6 +1087,16 @@
         "runtime": {
           "bin/placeholder/BakeryApi.Dao.Repository.dll": {}
         }
+      },
+      "BakeryApi.Domain.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/BakeryApi.Domain.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BakeryApi.Domain.Model.dll": {}
+        }
       }
     }
   },
@@ -3271,13 +3281,19 @@
       "type": "project",
       "path": "../BakeryApi.Dao.Repository/BakeryApi.Dao.Repository.csproj",
       "msbuildProject": "../BakeryApi.Dao.Repository/BakeryApi.Dao.Repository.csproj"
+    },
+    "BakeryApi.Domain.Model/1.0.0": {
+      "type": "project",
+      "path": "../BakeryApi.Domain.Model/BakeryApi.Domain.Model.csproj",
+      "msbuildProject": "../BakeryApi.Domain.Model/BakeryApi.Domain.Model.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "BakeryApi.Dao.Interface >= 1.0.0",
       "BakeryApi.Dao.Model >= 1.0.0",
-      "BakeryApi.Dao.Repository >= 1.0.0"
+      "BakeryApi.Dao.Repository >= 1.0.0",
+      "BakeryApi.Domain.Model >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3320,6 +3336,9 @@
             },
             "C:\\Users\\Joaqu\\source\\repos\\BakeryApi\\BakeryApi.Dao.Repository\\BakeryApi.Dao.Repository.csproj": {
               "projectPath": "C:\\Users\\Joaqu\\source\\repos\\BakeryApi\\BakeryApi.Dao.Repository\\BakeryApi.Dao.Repository.csproj"
+            },
+            "C:\\Users\\Joaqu\\source\\repos\\BakeryApi\\BakeryApi.Domain.Model\\BakeryApi.Domain.Model.csproj": {
+              "projectPath": "C:\\Users\\Joaqu\\source\\repos\\BakeryApi\\BakeryApi.Domain.Model\\BakeryApi.Domain.Model.csproj"
             }
           }
         }

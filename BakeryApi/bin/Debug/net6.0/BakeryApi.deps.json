@@ -783,10 +783,16 @@
         "dependencies": {
           "BakeryApi.Dao.Interface": "1.0.0",
           "BakeryApi.Dao.Model": "1.0.0",
-          "BakeryApi.Dao.Repository": "1.0.0"
+          "BakeryApi.Dao.Repository": "1.0.0",
+          "BakeryApi.Domain.Model": "1.0.0"
         },
         "runtime": {
           "BakeryApi.Dao.Service.dll": {}
+        }
+      },
+      "BakeryApi.Domain.Model/1.0.0": {
+        "runtime": {
+          "BakeryApi.Domain.Model.dll": {}
         }
       }
     }
@@ -1331,6 +1337,11 @@
       "sha512": ""
     },
     "BakeryApi.Dao.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BakeryApi.Domain.Model/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

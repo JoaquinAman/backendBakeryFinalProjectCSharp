@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BakeryApi.Dao.Model.Migrations
 {
     [DbContext(typeof(BakeryContext))]
-    [Migration("20221213181204_firstMigration")]
+    [Migration("20221214020344_firstMigration")]
     partial class firstMigration
     {
         /// <inheritdoc />
@@ -54,7 +54,6 @@ namespace BakeryApi.Dao.Model.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("BreadDaoId"));
 
                     b.Property<string>("BreadDaoName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Price")
